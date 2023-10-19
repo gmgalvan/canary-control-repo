@@ -1,0 +1,52 @@
+credentials.json
+
+# Compiled files
+*.tfstate
+*.tfstate.backup
+
+# Module-specific temporary files/directories
+.terraform/
+
+# .tfvars files may contain sensitive data, consider .gitignoring them
+*.tfvars
+
+# Crash log files
+crash.log
+
+# CLI configuration files
+.terraformrc
+terraform.rc
+
+# Override files
+override.tf
+override.tf.json
+
+# Ignore override files and directories
+*_override.tf
+*_override.tf.json
+*_override.tfvars
+
+# Include files which might contain sensitive data
+*.tfvars.template
+*.tfvars.example
+
+# Ignore IntelliJ IDEA project files/directories
+.idea/
+
+# VSCode
+.vscode/
+
+# Temporary files
+*.backup
+*.bak
+
+# Others
+*.swp
+*.log
+*.tmp
+*.temp
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
