@@ -1,0 +1,20 @@
+apiVersion: canary.demo.com/v1alpha1
+kind: Http
+metadata:
+  namespace: default
+  labels:
+    app.kubernetes.io/name: http
+    app.kubernetes.io/instance: http-sample
+    app.kubernetes.io/part-of: canary
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: canary
+  name: "hello-app"
+spec:
+  name: "hello-app"
+  deployment:
+    - image: "docker7gm/hello-world-app:v1.0.0"
+      weight: 50
+      version: "v1"
+    - image: "docker7gm/hello-world-app:v2.0.0"
+      weight: 50
+      version: "v2"
