@@ -2,7 +2,7 @@
 
 This repository contains the code and resources presented in the "Canary Control with Go: K8s & Istio Traffic Management" talk.
 
-![Demo Diagram](./assets/image.png)
+![Demo Diagram](./assets/demo.png)
 
 ## 📂 Folder Structure
 
@@ -15,7 +15,7 @@ Kubernetes manifests for the services deployed using Go.
 ### `terraform/cluster`
 Instructions and configurations to spin up a Kubernetes cluster using Terraform.
 
-### `canary-op`
+### `canaryoperator`
 A demonstration of the Canary operator.
 
 ## 🛠 Setup and Configuration
